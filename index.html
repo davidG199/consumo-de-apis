@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <main class="container">
+    <main class="container mb-5">
       <h1>Taller consumo de apis</h1>
       <section class="puntoUno">
         <p>Ejercicio 1.</p>
@@ -26,13 +26,35 @@
 
       <section class="puntoDos mt-2">
         <p>Ejercicio 2.</p>
-        <p>Buscador de cuidades</p>
-        <div class="Clima-ciudades col-6 d-flex flex-column ">
-            <div class="d-flex flex-row">
-                <input type="text"class="form-control me-5" id="buscarCiudad" >
-                <button class="btn btn-success btn-buscar">Buscar</button>
-            </div>
-          <!-- informacion de la api -->
+        <p>Buscador de clima segun la cuidad</p>
+        <div class="Clima-ciudades col-6 d-flex flex-column w-100">
+          <div class="d-flex flex-row w-100 mb-3">
+            <input
+              type="text"
+              class="form-control me-5"
+              id="buscarCiudad"
+              placeholder="Buscar cuidad"
+            />
+            <button class="btn btn-success btn-buscar">Buscar</button>
+          </div>
+          <!-- el clima va aqui -->
+        </div>
+      </section>
+
+      <section class="puntoTres mt-2">
+        <p>Ejercicio 3.</p>
+        <p>Pokedex</p>
+        <div class="d-flex flex-column justify-content-center align-items-center ">
+          <div class="d-flex flex-row gap-5 mb-5">
+            <input type="text"
+            class="form-control w-50"
+            id="buscarPokemon"
+            placeholder="buscar pokemon">
+            <button class="btn btn-success btn-buscar-pokemon">Buscar pokemon</button>
+          </div>
+          <div class="listaPokemon">
+              <!-- pokemon aca -->
+          </div>
         </div>
       </section>
     </main>
