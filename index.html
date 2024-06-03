@@ -12,52 +12,15 @@
     />
   </head>
   <body>
-    <main class="container mb-5">
+    <main class="container mt-4 text-center">
       <h1>Taller consumo de apis</h1>
-      <section class="puntoUno">
-        <p>Ejercicio 1.</p>
-        <p>Galeria de imagenes</p>
-        <div>
-          <div id="galeria-imagenes" class="row">
-            <!-- imagens van aqui -->
-          </div>
-        </div>
-      </section>
+      <p>Sitio web donde se muestra un ejemplo de consumo de apis</p>
 
-      <section class="puntoDos mt-2">
-        <p>Ejercicio 2.</p>
-        <p>Buscador de clima segun la cuidad</p>
-        <div class="Clima-ciudades col-6 d-flex flex-column w-100">
-          <div class="d-flex flex-row w-100 mb-3">
-            <input
-              type="text"
-              class="form-control me-5"
-              id="buscarCiudad"
-              placeholder="Buscar cuidad"
-            />
-            <button class="btn btn-success btn-buscar">Buscar</button>
-          </div>
-          <!-- el clima va aqui -->
-        </div>
-      </section>
-
-      <section class="puntoTres mt-2">
-        <p>Ejercicio 3.</p>
-        <p>Pokedex</p>
-        <div class="d-flex flex-column justify-content-center align-items-center ">
-          <div class="d-flex flex-row gap-5 mb-5">
-            <input type="text"
-            class="form-control w-50"
-            id="buscarPokemon"
-            placeholder="buscar pokemon">
-            <button class="btn btn-success btn-buscar-pokemon">Buscar pokemon</button>
-          </div>
-          <div class="listaPokemon">
-              <!-- pokemon aca -->
-          </div>
-        </div>
-      </section>
+      <div class="mt-5 d-flex justify-content-center gap-5">
+        <a href="./imagenesApi.html" class="btn btn-primary">Imagenes Api</a>
+        <a href="./clima.html" class="btn btn-primary">openWeatherMap api</a>
+        <a href="./pokemon.html" class="btn btn-primary">PokeApi</a>
+      </div>
     </main>
-    <script src="./index.js"></script>
   </body>
 </html>
