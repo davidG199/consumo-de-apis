@@ -1,0 +1,113 @@
+:root{
+    --bg_color: rgba(7,39,33,255);
+    --bg_card_color: rgba(5,26,22,255);
+    --text_color: rgba(236,239,244,255);
+    --btn_color: rgba(254,199,1,255);
+    --btn_hover_color: rgba(254,199,50,255);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+.container{
+    width: 100%;
+    padding: 24px;
+    height: 100vh;
+}
+
+.container .title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.container .description{
+    margin-bottom: 24px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.container-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container .container-content .btn{
+    text-decoration: none;
+    padding: 8px 12px;
+    color: black;
+    font-weight: 700;
+    background-color: var(--btn_color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .container-content .btn:hover{
+    background-color: var(--btn_hover_color);
+}
+
+.btn-back{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text_color);
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: all ease 0.2s;
+}
+
+.btn-back:hover{
+    color: var(--btn_hover_color);
+    transform: translate(-5px, 0);
+}
+
+.container-content input{
+    padding: 8px;
+    border: none;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+.container-content input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--btn_color);
+}
+
+.container-content input:active{
+    border-bottom: 2px solid var(--btn_color);
+}
+
+.container .description a{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+    .container{
+        width: 75%;
+        margin: auto;
+    }
+
+    .container-content{
+        flex-direction: row;
+    }
+    .container .title{
+        font-size: 32px;
+    }
+}

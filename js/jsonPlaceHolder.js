@@ -14,7 +14,7 @@ function imagenesApi() {
         const img = document.createElement("img");
         img.src = foto.thumbnailUrl;
         img.alt = "imagen";
-        img.classList.add("col", "mb-3");
+        // img.classList.add("col", "mb-3");
         imagenGaleria.appendChild(img);
       });
     })

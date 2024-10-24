@@ -1,0 +1,72 @@
+.Clima-ciudades div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.Clima-ciudades .card {
+  margin: 12px 0 32px 0;
+  width: 100%;
+}
+
+.Clima-ciudades .card div:first-child{
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+}
+
+.Clima-ciudades .card div .description-cli {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.Clima-ciudades .card .card-body {
+  display: flex;
+  align-items: start;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.Clima-ciudades .card .card-body div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.541);
+  padding: 0 4px 8px 0;
+}
+
+.Clima-ciudades .card .card-body div:last-child {
+  border: none;
+}
+
+.Clima-ciudades .card .card-body div p:first-child {
+  font-weight: bold;
+}
+
+.Clima-ciudades .card > p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.6;
+}
+
+@media (min-width: 600px) {
+  .Clima-ciudades .container-input {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+  }
+
+  .Clima-ciudades input {
+    width: 100%;
+  }
+
+  .Clima-ciudades .card {
+    width: 80%;
+  }
+}

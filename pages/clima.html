@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumo de apis</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/clima.css">
+  </head>
+  <body class="container">
+    <a href="/index.html" class="btn-back">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l4 4" /><path d="M5 12l4 -4" /></svg>
+    </a>
+    <section class="">
+      <div class="">
+        <h1 class="title">Open weather map</h1>
+        <p class="description">
+          Buscador de clima segun la cuidad
+          <a href="https://openweathermap.org/" target="_blank">open weather map API</a>
+        </p>
+      </div>
+      <div class="Clima-ciudades container-content">
+        <div class="container-input">
+          <input
+            type="text"
+            class=""
+            id="buscarCiudad"
+            placeholder="Buscar cuidad"
+          />
+          <button class="btn btn-buscar">Buscar</button>
+        </div>
+        <!-- el card del clima va aqui -->
+      </div>
+    </section>
+    <script src="../js/clima.js"></script>
+  </body>
+</html>
